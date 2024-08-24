@@ -1,0 +1,83 @@
+ /* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+/* Highlight Active Link and Change Background Color */
+nav ul li a.active, nav ul li a:hover {
+    background-color: pink;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    margin-top: 50px;
+    text-align: center;
+    opacity: 0; /* Initially hidden for fade-in effect */
+    transform: translateY(20px); /* Shifted down */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* In original position */
+}
+
+section h1, section h2 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#home {
+    background-color: lightpink;
+}
+
+#about, #services, #contact {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
